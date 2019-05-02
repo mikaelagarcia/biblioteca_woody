@@ -1,0 +1,1641 @@
+@font-face{
+    font-family: geosanslight;
+    src: url(../fonte/GeosansLight.ttf)
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fonte/Roboto-Thin.ttf)
+}
+html,body,p,body,ul,li,h1,h2,h3,h4,h5,h6,footer,form,label,input{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* CONTEUDO CMS - DIVS ESTRUTURA*/ 
+#containerCms{
+    width: 1280px;
+    height: 350px;
+    background-color: white;
+    margin: auto;
+}
+/* **********************CABEÇALHO************************ */ 
+#cabecalho{
+    width: 1200px;
+    height: 150px;
+    background-color: cadetblue;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#tituloCabecalho{
+    width: 700px;
+    height: 150px;
+    color: white;
+    font-family: geosanslight;
+    margin-left: 10px;
+    padding-top: 50px;
+    float: left;
+}
+#logoCabecalho{
+    width: 300px;
+    height: 150px;
+    float: left;
+    margin-left: 50px;
+}
+#logoCabecalho img{
+    width: 250px;
+    height: 150px;
+}
+/* **********************MENU - ICONES************************ */ 
+#menu{
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+    border: solid 1px gray;
+}
+.itemMenu{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    /* margin-left: 5px; */
+    border-radius: 10px;
+    float: left;
+}
+.imgItemMenu{
+    width: 130px;
+    height: 150px;
+    margin: auto;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+.imgItemMenu img{
+    width: 128px;
+    height: 128px;
+    margin: auto;
+   
+}
+.textItemMenu{
+    width: 130px;
+    height: 40px;
+    margin: auto;
+}
+.textItemMenu h3{
+    font-family: geosanslight;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color:cadetblue;
+    font-size: 20px;
+}
+/* ******************************AREA DE LONGIN******************** */
+#areaLogin{
+    width: 150px;
+    height: 200px;
+    float: left;
+    border-left: solid 1px grey;
+}
+#areaUsuario{
+    width: 148px;
+    height: 90px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+#login{
+    font-family: geosanslight;
+    font-size: 23px;
+    margin-left: 10px;
+}
+#logout{
+    width: 100px;
+    height: 104px;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+#btnLogout{
+    width: 100px;
+    font-family: geosanslight;
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 90px;
+    margin-top: 80px;
+}
+/* ********************** CONTEUDO PRINCIPAL - HOME-INDEX ************************ */
+#conteudoPrincipal{
+    width: 1200px;
+    height: 556px;
+    margin: auto;
+    border: solid 1px grey;
+}
+#admInicial h2{
+    font-family: geosanslight;
+    color: cadetblue;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+}
+.contentTab{
+    width: 1200px;
+    height: 556px;
+    color: cadetblue;
+    float: left;
+    display: none;
+    overflow: hidden;
+}
+.contentTab h2{
+    font-family: geosanslight;
+    color: cadetblue;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+    display: none;
+}
+/* ***************************FALE CONOSCO*************************** */
+#sessaoFaleConosco{
+    width: 1200px;
+    height: 556px;
+    margin: auto;
+    border: solid 1px grey;
+
+}
+#faleConosco{
+    width: 1200px;
+    height: 556px;
+    margin: auto;
+    /* width: inherit;
+    min-height:500px;*/
+    overflow: auto; 
+   
+}
+#tblFaleConosco{
+    width: 1200px;
+    height: 540px;
+    margin-top: 10px;
+    padding-left: 55px;
+}
+#tituloFaleConosco{
+    width: 1100px;
+    height: 45px;
+    background-color: cadetblue;
+    border: solid 1px gray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-family: geosanslight;
+    color: white;
+    padding-top: 6px;
+}
+.itemTblFaleConosco{
+    width: 183px;
+    height: 30px;
+    float: left;
+    padding-top: 5px;
+    border: solid 1px gray;
+    text-align: center;
+}
+.carregarDados{
+    width: 183px;
+    height: 40px;
+    float: left;
+    padding-top: 5px;
+    border: solid 1px gray;
+    text-align: center;
+    overflow: auto;
+}
+.carregarDados img{
+    width: 30px;
+    height: 29px;
+    margin: auto;
+    display: block;
+}
+/* CONTAINER  MODAL */
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed; /*vai estar fixo a posição*/ 
+    z-index: 999; /*vai sobrepor todas as tabelas*/ 
+    display: none; /* só vai chamar quando for clicado*/
+}
+#modal{
+    width: 600px;
+    height: 600px;
+    background-color: #f2ecdc;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 100px; */
+    border-radius: 5px;
+}
+/* *********************************ADMINISTRAÇÃO DE USUARIOS********************* */
+#admUsuarios{
+    width: 1200px;
+    height: 558px;
+    border: solid 1px gray;
+    margin: auto;
+}
+.itemOpcao{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    float: left;
+    background-color: #76c2af;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+.itemOpcao img{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+.btnCad{
+    width: 125px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 80px;
+}
+/* ****************************cadastroUsuario******************************* */
+#sessaoCadUsuario{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    border: solid 1px gray;
+}
+#seguraFormUsuario{
+    width: 600px;
+    height: 370px;
+    margin: auto;
+    border: solid 1px gray;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#formCadUsuario{
+    width: 600px;
+    height: 370px;
+    margin: auto;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+#formTituloUser{
+    width: 600px;
+    height: 30px;
+    border: solid 2px white;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+    /* color: #76c2af; */
+}
+.itemForm{
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    border: solid 1px grey;
+    margin-top: 10px;
+    padding-top: 5px;
+    border: solid 2px white;
+    border-radius: 10px;
+}
+.itemForm p{
+    margin-left: 5px;
+}
+#btnEnviarUsuario{
+    width: 70px;
+    height: 30px;
+    margin-left: 95px;    
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+}
+.txtFormUsuario{
+    width: 200px;
+    margin: auto;
+    border: 0px;
+    border-radius: 5px;
+    height: 23px;
+}
+#listaUsuario{
+    width: 900px;
+    height: 220px;
+    background-color: beige;
+    border: solid 1px grey;
+    overflow: auto;
+    margin: auto;
+    margin-top: 8px;
+}
+.itemListaUsuario{
+    width: 290px;
+    background-color: #76c2af;
+    height: 30px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+}
+.carregarListUsuario{
+    width: 290px;
+    height: 30px;
+    background-color: white;
+    color: grey;
+    font-family: geosanslight;
+    float: left;
+    border: solid 1px grey;
+    text-align: center;
+}
+.carregarListUsuario img{
+    width: 24px;
+    height: 24px;
+}
+/* *******************************Cadastro de Nivel******************************* */
+#sessaoForm{
+    width: 1200px;
+    height: 600px;
+    border: solid 1px gray;
+    margin: auto;
+}
+#seguraForm{
+    width: 400px;
+    height: 120px;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+    border: solid 1px gray;
+    color: #76c2af;
+    background-color: #76c2af;
+}
+form{
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #76c2af;
+    color: white;
+}
+.cadNivel{
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    color: white;
+    font-family: geosanslight;
+    font-size: 18px;
+    background-color: #76c2af;
+}
+.cadNivel h4{
+    margin-left: 30px;
+}
+#txtcadNivel{
+    border-radius: 10px;
+    height: 27px;;
+}
+#btnSalvarNivel{
+    width: 125px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 120px;
+}
+/*  ********************INICIO DA LISTA - NIVEL ******** */
+#listaNivel{
+    width: 420px;
+    height: 468px;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: solid 1px grey;
+    background-color: #76c2af;
+    overflow: auto;
+}
+.itemListaNivel{
+    width: 199px;
+    height: 30px;
+    font-family: geosanslight;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    float: left;
+    border: solid 2px white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-left: none;
+    border-right: none;
+    background-color: #76c2af;
+}
+.carregarCadNivel{
+    width: 199px;;
+    height: 30px;
+    border: solid 1px gray;
+    font-family: geosanslight;
+    text-align: center;
+    color: gray;
+    float: left;
+    padding-top: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: white;
+}
+.carregarCadNivel img{
+    width: 24px;
+    height: 24px;
+}
+/* ****************************************ADMINISTRAÇÃO DE CONTEUDO************************ */
+#sessaoAdmConteudo{
+    width: 1200px;
+    height: 775px;
+    border: solid 1px grey;
+    margin: auto;
+}
+.itemOpcaoConteudo{
+    width: 280px;
+    height: 180px;
+    background-color: #76c2af;
+    margin: auto;
+    float: left;
+    border: solid 1px grey;
+    margin-left: 45px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.itemOpcaoConteudo img{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+.btnAdmConteudo{
+    width: 125px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 80px;
+}
+/* **************************************admAutores************************************* */
+#sessaoadmAutores{
+    width: 1200px;
+    height: 250px;
+    border: solid 1px grey;
+    margin: auto;
+}
+.seguraForm{
+    width: 400px;
+    height: 200px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    margin: auto;
+    margin-top: 5px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-family: geosanslight;
+}
+.seguraForm form{
+    border-radius: 10px;
+    margin: auto;
+}
+#carregarImg{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 5px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-family: geosanslight;
+}
+#carregarImg img{
+    width: 400px;
+    height: 200px;
+}
+
+#seguraListaAdmAutores{
+    width: 1200px;
+    height: 450px;
+    margin: auto;
+    border: solid 1px grey;
+}
+#listaAdmAutores{
+    width: 900px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid grey;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.itemListaAutores{
+    width: 299px;
+    background-color: #76c2af;
+    height: 30px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+    border-radius: 10px;
+}
+#btnGravarAutores{
+    width: 100px;
+    height: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 80px;
+}
+#carregarListaAutores{
+    width: 299px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px grey;
+    margin: auto;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#carregarListaAutores img{
+    width: 24px;
+    height: 24px;
+}
+/* **********************************ADM LIVRO EM DESTAQUE************************* */
+#sessaoAdmLivroDestaque{
+    width: 1200px;
+    height: px;
+    border: solid 1px grey;
+    margin: auto;
+}
+#seguraFormLivroDestaque{
+    width: 400px;
+    height: 140px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+}
+form{
+    border-radius: 10px;
+}
+#formTituloDestque{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadDestaque{
+    width: 400px;
+    height: 35px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px;
+}
+#listaAdmLivroDestaque{
+    width: 400px;
+    height: 220px;
+    background-color: beige;
+    border: solid 1px grey;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.itemlistaDestaque{
+    width: 199px;
+    height: 30px;
+    background-color: #76c2af;
+    color: white;
+    float: left;
+    border: solid 1px grey;
+    border-radius: 10px;
+    text-align: center;
+}
+.carregarlistaDestaque{
+    width: 198px;
+    height: 30px;
+    border: solid 1px grey;
+    color: grey;
+    font-family: geosanslight;
+    text-align: center;
+    float: left;
+    margin: auto;
+}
+
+#btnGravarDestaque{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+    margin-bottom: 5px;
+    background-color: white;
+
+}
+/* ***************************ADM IMAGEM*************************** */
+#sessaoAdmImagem{
+    width: 1200px;
+    height: 235px;
+    border: solid 1px grey;
+    margin: auto;
+}
+.seguraFormAdmImagem{
+    width: 400px;
+    height: 205px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+    float: left;
+    margin-left: 100px;
+}
+#carregarImg{
+    width: 400px;
+    height: 205px;
+    margin: auto;
+    margin-top: 5px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-family: geosanslight;
+}
+form{
+    border-radius: 10px;
+}
+#formTituloImg{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadImg{
+    width: 400px;
+    height: 35px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px;
+}
+#btnGravarImg{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+#sessaoLista{
+    width: 1200px;
+}
+#listaImg{
+    width: 400px;
+    height: 220px;
+    background-color: beige;
+    border: solid 1px grey;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.itemListaImg{
+    width: 199px;
+    height: 30px;
+    background-color: #76c2af;
+    color: white;
+    float: left;
+    border: solid 1px grey;
+    border-radius: 10px;
+    text-align: center;
+}
+#sessaoLista{
+    width: 1200px;
+    height: 235px;
+    border: solid 1px grey;
+    margin: auto;
+}
+.carregarListaImg{
+    width: 198px;
+    height: 30px;
+    border: solid 1px grey;
+    color: grey;
+    font-family: geosanslight;
+    text-align: center;
+    float: left;
+    margin: auto;
+
+}
+/* *********************************ADM ENDERECO***************************** */
+#sessaoEndereco{
+    width: 1200px;
+    height: 524px;
+    border: solid 1px grey;
+    margin: auto;
+}
+#seguraFormEndereco{
+    width: 400px;
+    height: 290px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+}
+form{
+    border-radius: 10px;
+}
+#tituloFormEndereco{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadEndereco{
+    width: 400px;
+    height: 30px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px;
+}
+#btnGravarEndereco{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+#listaAdmEndereco{
+    width: 1200px;
+    height: 220px;
+    border: solid 1px grey;
+    background-color: beige;
+    overflow: auto;
+    margin: auto;
+    margin-top: 8px;
+}
+.itemListaEndereco{
+    width: 171px;
+    background-color: #76c2af;
+    height: 30px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+    border-radius: 10px;
+}
+.carregarListaEndereco{
+    width: 171px;
+    height: 30px;
+    background-color: white;
+    color: grey;
+    font-family: geosanslight;
+    float: left;
+    border: solid 1px grey;
+    text-align: center;
+}
+/* ******************************************ADM HORÁRIOS**************************** */
+#sessaoCadHorario{
+    width: 1200px;
+    height: 400px;
+    border: solid 1px grey;
+    margin: auto;
+}
+#seguraFormCadHorario{
+    width: 400px;
+    height: 150px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+#tituloFormHorario{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadHorario{
+    width: 400px;
+    height: 30px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+}
+#btnGravarHorario{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+    background-color: white;
+}
+#listaCadHorario{
+    width: 900px;
+    height: 220px;
+    border: solid 1px grey;
+    margin: auto;
+    margin-top: 5px;
+    background-color: beige;
+    overflow: auto;
+}
+.itemListaCadHorario{
+    width: 299px;
+    height: 30px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+}
+.carregarListaCadHorario{
+    width: 299px;
+    height: 30px;
+    background-color: white;
+    color: grey;
+    font-family: geosanslight;
+    float: left;
+    border: solid 1px grey;
+    text-align: center;
+}
+/* *****************************************ADM LOJAS************************************* */
+#sessaoLojas{
+    width: 1200px;
+    height: 260px;
+    border: solid 1px grey;
+    margin: auto;
+}
+#seguraFormLojas{
+    width: 400px;
+    height: 225px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+    float: left;
+    margin-left: 300px;
+}
+#tituloFormLojas{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadLoja{
+    width: 400px;
+    height: 30px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+}
+#btnGravarLoja{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+    background-color: white;
+}
+#sessaoListaLoja{
+    width: 1200px;
+    height: 260px;
+    border: solid 1px grey;
+    margin: auto;
+}
+#listaCadLoja{
+    width: 998px;
+    height: 249px;
+    border: solid 1px grey;
+    background-color: beige;
+    overflow: auto;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.itemListaCadLoja{
+    width: 199px;
+    height: 30px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+    
+}
+.carregarListaCadLoja{
+    width: 199px;
+    height: 30px;
+    background-color: white;
+    color: grey;
+    font-family: geosanslight;
+    float: left;
+    border: solid 1px grey;
+    text-align: center;
+}
+/* *************************************SOBRE******************************************* */
+#sessaoAdmSobre{
+    width: 1200px;
+    height: 700px;
+    border: solid 1px grey;
+    margin: auto;
+}
+#seguraFormAdmSobre{
+    width: 408px;
+    height: 355px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    margin: auto;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+    margin-top: 5px;
+}
+#tituloFormSobre{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadSobre{
+    width: 400px;
+    height: 250px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+}
+#txtAreaSobre{
+    width: 345px;
+    height: 200px;
+    margin-left: 10px;
+}
+#btnGravarSobre{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin: auto;
+    margin-left: 150px;
+}
+#listaCadSobre{
+    width: 620px;
+    height: 333px;
+    border: solid 1px grey;
+    margin: auto;
+    margin-top: 5px;
+    background-color: beige;
+    overflow: auto;
+
+}
+.itemListaCadSobre{
+    width: 308px;
+    height: 50px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+    padding-top: 2px;
+}
+.carregarListaCadSobre{
+    width: 308px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px grey;
+    margin: auto;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.carregarListaCadSobre img{
+    width: 24px;
+    height: 24px;       
+}
+/* ***************************** CADASTRAR PROMOÇÃO********************** */
+#sessaoAdmPromocao{ 
+    width: 1200px;
+    height: 380px;
+    border: solid 1px grey;
+    margin: auto;
+}
+#seguraFormAdmPromocao{
+    width: 400px;
+    height: 165px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+    margin-top: 5px;
+    margin: auto;
+}
+#tituloformPromocao{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormPromocao{
+    width: 400px;
+    height: 30px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+}
+#btnGravarPromocao{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+}
+#listaCadPromocao{
+    width: 599px;
+    height: 200px;
+    margin-left: -50px;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: beige;
+    overflow: auto;
+    margin-top: 15px;
+}
+.itemCadPromocao{
+    width: 199px;
+    height: 30px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+}
+.carregarCadPromocao{
+    width: 199px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px grey;
+    margin: auto;
+    color: grey;
+}
+/* ************************************ADMINISTRAÇÃO DE PROMOÇÕES****************** */
+#sessaoAdmPromocao{
+    width: 1200px;
+    height: 390px;
+    margin: auto;
+    border: solid 1px grey;
+}
+#seguraFormPromocao{
+    width: 400px;
+    height: 165px;
+    background-color: #76c2af;
+    border: solid 1px grey;
+    border-radius: 10px;
+    font-family: geosanslight;
+    color: white;
+    margin-top: 10px;
+    margin: auto;
+}
+#tituloFormPromocao{
+    width: 400px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormPromocao{
+    width: 400px;
+    height: 30px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+}
+#btnGravarAdmPromocao{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+}
+#listaAdmPromocao{
+    width: 615px;
+    height: 200px;
+    margin: auto;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: beige;
+    overflow: auto;
+    margin-top: 15px;
+}
+.itemListaPromocao{
+    width: 198px;
+    height: 30px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+}
+.carregarListaPromocao{
+    width: 198px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px grey;
+    margin: auto;
+}
+.carregarListaPromocao img{
+    width: 24px;
+    height: 24px;
+}
+/* ***************************************************ADM PRODUTOS************************** */
+#admProdutos{
+    width: 1200px;
+    height: 558px;
+    border: solid 1px gray;
+    margin: auto;
+}
+.itemOpcao{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    float: left;
+    background-color: #76c2af;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+.btnAdmProdutos{
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    font-size: 15px;
+    border: none;
+    margin-left: 80px;
+}
+/* **************************************************CADASTRO DE LIVROS******************************************** */
+#sessaoCadastroLivro{
+    width: 1200px;
+    height: 1005px;
+    border: solid 1px gray;
+    margin: auto;
+    overflow: auto;
+    min-height: 900px;
+}
+
+.seguraFormLivro{
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    background-color: #76c2af;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#tituloCadLivro {
+    width: 500px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadLivro{
+    width: 500px;
+    height: 40px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+   
+}
+.txtFormLivro{
+    width: 200px;
+    margin: auto;
+    border: 0px;
+    border-radius: 5px;
+    height: 23px;
+}
+#btnGravarLivro{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    margin-left: 140px;
+    background-color: white;
+}
+#listaCadastroLivro{
+    width: 1150px;
+    height: 300px;
+    margin: auto;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: beige;
+    overflow: auto;
+    margin-top: 15px;
+}
+.itemListaLivro{
+    width: 135px;
+    height: 30px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+}
+.carregarListaLivro{
+    width: 135px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px grey;
+    margin: auto;
+}
+.carregarListaLivro img{
+    width: 24px;
+    height: 24px;
+}
+.itemFoto{
+    width: 250px;
+    height: 145px;
+    float: left;
+}
+.itemFoto img{
+    width: 240px;
+    height: 145px;
+}
+
+/* ****************************************************CADASTRO CATEGORIA******************************** */
+#sessaoCadastroCat{
+    width: 1200px;
+    height: 558px;
+    border: solid 1px gray;
+    margin: auto; 
+}
+#seguraFormCadCat{
+    width: 800px;
+    height: 180px;
+    margin: auto;
+    border: solid 1px lightslategray;
+}
+#txtFormCategoria{
+    width: 200px;
+    margin: auto;
+    border: 0px;
+    border-radius: 5px;
+    height: 23px;   
+}
+#tituloFormCat{
+    width: 600px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+#itemFormCadLivro{
+    width: 600px;
+    height: 40px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+    text-align: center;
+}
+#btnGravarCategoria{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    background-color: white;
+}
+#listaCategoria{
+    width: 420px;
+    height: 355px;
+    margin: auto;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: beige;
+    overflow: auto;
+    margin-top: 15px;
+}
+.itemListaCategoria{
+    width: 198px;
+    height: 30px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+}
+.carregarListaCategoria{
+    width: 198px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px grey;
+    margin: auto;
+}
+.carregarListaCategoria img{
+    width: 24px;
+    height: 24px;
+}
+
+/* **************************************CADASTRO SUBCATEGORIA********************************** */
+#sessaoCadastroSub{
+    width: 1200px;
+    height: 558px;
+    border: solid 1px gray;
+    margin: auto;
+}
+#seguraFormCadSub{
+    width: 800px;
+    height: 190px;
+    margin: auto;
+    border: solid 1px gray;
+}
+#tituloFormCadSub{
+    width: 600px;
+    height: 30px;
+    border: solid 2px white;
+    margin: auto;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: geosanslight;
+}
+.itemFormCadSub{
+    width: 600px;
+    height: 30px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px; 
+    text-align: center;
+}
+#txtFormSub{
+    width: 200px;
+    margin: auto;
+    border: 0px;
+    border-radius: 5px;
+    height: 23px;  
+}
+#btnSalvar{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+    background-color: white;
+}
+#listaSubcategoria{
+    width: 600px;
+    height: 355px;
+    margin: auto;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: beige;
+    overflow: auto;
+    margin-top: 15px;
+}
+.itemListaSubcategoria{
+    width: 198px;
+    height: 30px;
+    background-color: #76c2af;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px white;
+    margin: auto;
+}
+.carregarListaSubcategoria{
+    width: 198px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    font-family: geosanslight;
+    font-size: 20px;
+    border: solid 1px grey;
+    margin: auto;
+}
+
+/* **********************FOOTER************************ */ 
+#conteudoFooter{
+    width: 1200px;
+    height: 30px;
+    background-color: white;
+    margin: auto;
+    font-family: geosanslight;
+    color: cadetblue;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+    border: solid 1px grey;
+    font-size: 17px;
+}

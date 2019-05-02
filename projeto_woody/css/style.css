@@ -1,0 +1,935 @@
+@font-face{
+    font-family: geosanslight;
+    src: url(../fonte/GeosansLight.ttf)
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fonte/Roboto-Thin.ttf)
+}
+
+html,body,p,body,ul,li,h1,h2,h3,h4,h5,h6,footer,form,label,input{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: gray;
+}
+/************************************* CABECALHO ************************/
+#conteudoPrincipal{
+    width: 100%;
+    height: 1740px ;
+}
+#descerSlider{
+    width: 100%;
+    height: 110px;
+    background-color: cadetblue;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 110px;
+    background-color: cadetblue;
+    margin: auto;
+    position: fixed;
+    z-index: 999;
+}
+#cabecalho{
+    width: 1280px;
+    height: 110px;
+    background-color: cadetblue;
+    margin: auto;
+}
+#seguraLogo{
+    width: 150px;
+    height: 110px;
+    background-color: white;
+    float: left;
+}
+#logo{
+    width: 150px;
+    height: 110px;
+}
+
+#seguraMenu{
+    width: 600px;
+    height: 100px;
+    background-color: cadetblue;
+    margin-left: 5px;
+    float: left;
+}
+.itemMenu{
+    width: 100px;
+    height: 96px;
+    float: left;
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+    padding-top: 40px;
+    font-family: geosanslight, Helvetica, sans-serif;
+    /*hover*/
+}
+.itemMenu:hover{
+    color: white;
+}
+#seguraFaleC{
+    width: 400px;
+    height: 100px;
+    background-color: cadetblue;
+     margin-left: 60px;
+    float: left;
+    padding-top: 20px;
+}
+#usuario{
+    width: 170px;
+    height: 90px;
+    background-color: cadetblue;
+    margin-left: 15px;
+    color: white;
+    float: left;
+    font-family: geosanslight;
+}
+#senha{
+    width: 170px;
+    height: 90px;
+    background-color: cadetblue;
+    margin-left: 40px;
+    color: white;
+    float: left;
+    font-family: geosanslight;
+}
+#btnLogin{
+    width: 70px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+}
+#txtUsuario{
+    margin: auto;
+    border: 0px;
+    border-radius: 5px;
+    height: 23px;
+}
+#txtSenha{
+    margin: auto;
+    border: 0px;
+    border-radius: 5px;
+    height: 23px;
+    
+}
+/**************************** REDES SOCIAIS E DIV SEGURANDO CONTEUDO***************************/
+#holdContent{
+    width: 1370px;
+    min-height: 1320px;
+    height: auto;
+    overflow: hidden; 
+    margin: auto;
+    background-color: white;  
+     
+}
+#container{
+    width:1280px;
+    float: left;
+    min-height: 1320px;
+    height: auto;
+    overflow: hidden; 
+}
+#redesSociais{
+    width: 90px;
+    height: 1320px;
+    float: left;
+    background-color: white;
+}
+#conteudoRedesSociais{
+    width: 89px;
+    height: 400px;
+    margin-top: 15px;
+    position: fixed;
+    background-color: white;
+}
+.imgRedeSocial{
+    width: 88px;
+    height: 70px;
+    margin-top: 10px;
+}
+/**************************** SLIDER************************************/
+#seguraSlider{
+    width: 1280px;
+    height: 498px;
+    margin: auto;
+    background-color: #d7dee8;
+}
+/**************************** LOJAS************************************/
+#conteudoLojas{
+    width: 1280px;
+    height: 1320px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+#containerStore{
+    width: 1280px;
+    height: 1300px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+#tituloLoja{
+    width: 900px;
+    height: 100px;
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 25px;
+    font-family: geosanslight;
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-left: 99px;
+    color: white;
+    margin-top: 5px;
+}
+#lojas{
+    width: 1100px;
+    height: 1150px;
+    background-color: white;
+    margin-top: 20px;
+}
+.catalagoLojas{
+    width: 900px;
+    height: 210px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.imgLojas{
+    width: 250px;
+    height: 210px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+}
+.lojaImg{
+    width: 250px;
+    height: 210px;
+    border-radius: 5px;
+    float: left;
+    background-color: white;
+}
+
+.infoLojas{
+    width: 600px;
+    height: 210px;
+    background-color: cadetblue;
+    float: left;
+    border-radius: 5px;
+    margin-left: 50px;
+    color: white;
+}
+.col1Lojas{
+    width: 240px;
+    height: 210px;
+    font-family: geosanslight;
+    line-height: 28px;
+    margin-left: 15px;
+    padding-top: 15px;
+    border-right: 5px solid white; 
+    float: left;
+    border-radius: 10px;
+}
+.col2Lojas{
+    width: 280px;
+    height: 210px;
+    font-family: geosanslight;
+    line-height: 28px;
+    margin-left: 20px;
+    padding-top: 15px;
+    float: left;
+    border-radius: 10px;
+}
+.btnLocalizacao{
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    border: none;
+}
+/* ***************************** DESTAQUES********************************/
+#seguraDestaques{
+    width: 1280px;
+    height: 900px;
+    background-color: white;
+    margin: auto;
+}
+#containerDestaques{
+    width: 1100px;
+    height: 900px;
+    background-color: white;
+    margin: auto;
+}
+#tituloDestaques{
+    width: 900px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    font-family: geosanslight;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+ #imgDestaques{
+    width: 900px;
+    height: 330px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+     
+ }
+ #destaqueImg{
+    width: 250px;
+    height: 330px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    margin-left: 215px;
+ }
+ #destaqueImg img{
+    width: 250px;
+    height: 330px;
+    border-radius: 10px;
+ }
+#descLivroDestaques{
+    width: 200px;
+    height: 330px;
+    background-color: cadetblue;
+    float: left;
+    margin-left: 213px;
+    border-left: solid 2px white;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 15px;
+    border-radius: 10px;
+   
+ }
+#descLivroDestaques p{
+    font-family: geosanslight;
+    color: white;
+    font-size: 18px;
+}
+
+
+ #conteudoDestaques{
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10px;
+ }
+ #descricaoLivro{
+    margin-top: 10px;
+    width: 500px;
+    height: 350px;
+    background-color: cadetblue;
+    color: white;
+    font-family:  geosanslight;
+    margin-left: 80px;
+    float: left;
+    border-radius: 10px;
+ }
+ #descricaoLivro p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: geosanslight;
+    font-size: 17px;
+ }
+ #linkDescricao{
+    margin-top: 10px;
+    width: 200px;
+    height: 350px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 100px;
+ }
+ .linkDescricaoLinha{
+    background-color: cadetblue;
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    font-family: geosanslight;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+/* ***************************** SOBRE********************************/
+#conteudoSobre{
+    width: 1280px;
+    height: 1000px;
+    margin: auto;
+}
+#containerSobre{
+    width: 1100px;
+    height: 1000px;
+    background-color: white;
+    margin: auto;
+}
+#tituloSobre{
+    width: 900px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: white;
+    font-family: geosanslight;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#imgSobre{
+    width: 900px;
+    height: 215px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+.imgSobreLojas{
+    width: 175px;
+    height: 215px;
+    float: left;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 4px;
+}
+.imgSobreLojas img{
+    width: 175px;
+    height: 215px;
+    float: left;
+    border-radius: 10px;
+}
+#descricaoHistoria{
+    width: 900px;
+    height: 600px;
+    background-color: cadetblue;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: geosanslight;
+}
+#descricaoHistoria h2{
+    margin-left: 20px;
+}
+
+#descricaoHistoria p{
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* ***************************** AUTORES********************************/
+#conteudoAutores{
+    width: 1280px;
+    height: 1320px;
+    background-color: white;
+    margin: auto;
+}
+#containerAutores{
+    width: 1100px;
+    height: 1320px;
+    background-color: white;
+    margin: auto;
+}
+#tituloAutores{
+    width: 900px;
+    height: 100px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    color: white;
+    font-family: geosanslight;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+.listaAutores{
+    width: 1000px;
+    height: 1100px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.autores{
+    width: 1000px;
+    height: 350px;
+    background-color: white;
+    margin-top: 15px; 
+}
+.imgAutores{
+    width: 250px;
+    height: 330px;
+    background-color: #d7dee8;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.imgAutores img{
+    width: 250px;
+    height: 330px;
+    background-color: #d7dee8;
+    float: left;
+    border-radius: 10px;
+}
+.descricaoAutores{
+    width: 709px;
+    height: 330px;
+    background-color: cadetblue;
+    float: left;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: justify;
+    color: white;
+}
+.descricaoAutores p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: geosanslight;
+}
+.descricaoAutores h2{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: geosanslight;
+    text-transform: uppercase;
+}
+/* ***************************** MENU E WALLPAPER**********************/
+#seguraWallpaper{
+    width: 1280px;
+    height: 425px;
+    margin: auto;
+    background-color: white;
+}
+#menuVerticalWall{
+    width: 200px;
+    height: 430px;
+    background-color: white;
+    float: left;
+}
+.itemMenuVerticalWall{
+    width: 199px;
+    height: 70px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    margin-top: 1px;
+    text-align: center;
+    font-family: geosanslight;
+    padding-top: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+#wallpaper{
+    width: 1078px;
+    height: 426px;
+    background-color: white;
+    float: left;
+}
+/************************************** FORM ****************************************************/
+#sessaoForm{
+    width: 1280px;
+    height: 850px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+#infoFaleConosco{
+    width: 800px;
+    height: 90px;
+    background-color: cadetblue;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: geosanslight;
+    padding-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#seguraForm{
+    width: 800px;
+    height: 700px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    color: white;
+    font-family: geosanslight;
+}
+#formFaleConosco{
+    width: 600px;
+    height: 880px;
+    margin: auto;
+}
+#formTitulo{
+    width: 600px;
+    height: 80px;
+    color: white;
+    font-family: geosanslight;
+    padding-top: 20px;
+    font-size: 28px;
+}
+.form{
+    width: 299px;
+    height: 50px; 
+    float: left;
+    color: white;
+    font-family: geosanslight;
+    font-size: 22px;
+    padding-top: 3px;
+}
+.txtSize{
+    width: 250px;
+    height: 23px;
+    border-radius: 5px;
+}
+.textArea{
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+}
+.formTextArea{
+    width: 299px;
+    height: 80px; 
+    border-radius: 5px;
+    float: left;
+    padding-top: 3px;
+}
+.submit{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: geosanslight;
+    color: black;
+}
+#cbSexo{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: geosanslight;
+}
+/************************************** CONTEUDO - HOME ****************************************************/
+#seguraConteudo{
+    width: 1280px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    min-height: 820px;
+    overflow: hidden;
+}
+#menuVertical{
+    width: 200px;;
+    height: 815px;
+    float: left;
+}
+.menu_categoria{
+    width: 199px;
+    height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 3px;
+    font-family: geosanslight;
+    background-color: cadetblue;
+    text-align: center;
+    border-radius: 5px;
+}
+.caixa_subcategoria{
+    margin-left: 200px;
+    background-color: lightblue;
+    width: 199px;
+    height: 165px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 999;
+    backface-visibility: hidden;
+    margin-top: -25px;
+    display: none;
+    width: 199px;
+    height: auto;
+    min-height: 0px;
+    overflow: hidden;
+}
+.menu_categoria:hover > .caixa_subcategoria{
+    opacity: 1;
+    overflow: visible;
+    display: block;
+}
+.item_subcategoria{
+    width: 199px;
+    height: 65px;
+}
+/* BARA DE BUSCA */
+#conteudo{
+    width: 1080px;
+    height: auto;
+    min-height: 800px;
+    overflow: hidden;
+}
+
+#conteudo_barra{
+    width: 0px;
+    height: 50px;
+    margin: auto;
+    background-color: cadetblue;
+
+
+
+}
+#barra_busca{
+
+    width: 180px;
+    height: 40px;
+    margin: auto;
+    background-color: cadetblue;
+
+
+
+}
+
+
+.catalago{
+    width: 345px;
+    height: 400px;
+    background-color: #d7dee8;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.seguraimgCatalago{
+    width: 150px;
+    height: 200px;
+    margin: auto;
+}
+.imgCatalago{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.seguraimgCatalago img{
+    width: 150px;
+    height: 200px;
+}
+.descCatalago{
+    width: 320px;
+    height: 170px;
+    background-color: cadetblue;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 28px;
+    font-family: geosanslight;
+    padding-top: 5px;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+}
+.btnDetalhes{
+    border: 0px;
+    border-radius: 5px;
+    font-family: geosanslight;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+/************************************** CONTEUDO PROMOCOES ***********************/
+#conteudoPromocoes{
+    width: 1278px;
+    height: 81px;
+    float: left;
+    background-color: white;
+    
+}    
+.catalagoPromocao{
+    width: 305px;
+    height: 400px;
+    background-color: #d7dee8;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.imgCatalagoPromocao{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.descCatalagoPromocao{
+    width: 280px;
+    height: 170px;
+    background-color: cadetblue;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 28px;
+    font-family: geosanslight;
+    padding-top: 5px;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+}
+/********************** FOOTER ******************************/
+footer{
+    width: 100%;
+    height: 370px;
+    background-color: cadetblue;
+    padding: 2px;
+}
+#rodapeFooter{
+    width: 1380px;
+    height: 370px;
+    background-color: cadetblue;
+    margin: auto;
+}
+#rodape{
+    width: 1280px;
+    height: 370px;
+    background-color: cadetblue;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+#rodapePromocoes{
+    width: 1380px;
+    height: 370px;
+    background-color: cadetblue;
+    margin-right: auto;
+    margin-left: auto;
+}
+.format{
+    color: rgb(45,45,45);
+    text-decoration: none;
+}
+.format:hover{
+    color: gray;
+}
+#contatoFooter{
+    width: 1280px;
+    height: 70px;
+    background-color: #d7dee8;
+    padding: 3px;
+    /*border-bottom: 1px solid gray;*/
+}
+#iconFooter{
+    width: 100px;
+    height: 70px;
+    float: left;
+    margin-left: 10px;
+}
+#infoFooter{
+    width: 1000px;
+    height: 50px;
+    float: left;
+    background-color: #d7dee8;
+    font-family: geosanslight, roboto, sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 6px;    
+}
+#conteudoFooter{
+    width: 1280px;
+    height: 260px;
+    background-color: #d7dee8;
+}
+.containerFooter{
+    width: 410px;
+    height: 250px;
+    background-color: #d7dee8;
+    margin-left: 10px;
+    float: left;
+    padding-top: 10px;
+    font-family: geosanslight;
+    font-size: 18px;
+    padding-left: 25px;
+    line-height: 28px;
+}
+h5{
+    color: rgb(45,45,45);
+}
+#formadePagamento{
+    width: 316px;
+    height: 250px;
+    background-color: #d7dee8;
+    margin-left: 10px;
+    float: left;
+    padding-top: 10px;
+    font-family: geosanslight, roboto, sans-serif;
+    font-size: 18px;
+    padding-left: 25px;
+    line-height: 28px;
+}
+.iconePag{
+    margin: 0px;
+}
+#copirightFooter{
+    width: 1280px;
+    height: 40px;
+    background-color: #d7dee8;
+    font-size: 18px;
+}
+#copiright{
+    width: 1000px;
+    height: 40px;
+    color: black;
+    float: left;
+    font-family: geosanslight, roboto, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 2px;
+}
+
+
+
+
